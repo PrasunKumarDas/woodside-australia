@@ -1,0 +1,26 @@
+<!-- 
+<div class="row">
+<div class="container">
+<div class="col-md-3">
+  <select>
+  	<option>Woodside</option>
+  	<option></option>
+  </select>
+</div>
+<div class="col-md-7"></div>
+<div class="col-md-2"></div>
+</div>
+</div> -->
+<div class="row chart-container">
+
+<button class="btn btn-info" (click)="generateChart(1)">1 Day</button>
+<button class="btn btn-info" (click)="generateChart(5)">5 Day</button>
+<button class="btn btn-info" (click)="generateChart()">1 Month</button>
+<button class="btn btn-info" (click)="generateChart()">3 Month</button>
+<button class="btn btn-info" (click)="generateChart()">1 Year</button>
+<button class="btn btn-info" (click)="generateChart()">5 Year</button>
+<button class="btn btn-info" (click)="generateChart()">Max</button>
+<div [chart]="chart"></div>
+
+
+</div>
